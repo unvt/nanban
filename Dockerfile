@@ -1,4 +1,5 @@
 FROM ubuntu:latest
+WORKDIR /root
 
 RUN apt-get update&&\
   apt-get -y upgrade&&\
@@ -24,6 +25,7 @@ RUN apt-get update&&\
     libglfw3-dev\
     libsqlite3-dev\
     libtool\
+    man\
     nano\
     nginx\
     nodejs\
@@ -37,15 +39,16 @@ RUN apt-get update&&\
     zip\
     zlib1g-dev&&\ 
   git clone https://github.com/mapbox/tippecanoe&&\
-  cd tippecanoe; make -j3 LDFLAGS="-latomic"; make install; cd ..&&\
+  cd tippecanoe; make -j3 LDFLAGS="-latomic"; sudo make install; cd ..&&\
   rm -rf tippecanoe&&\
-  yarn global add\
+  sudo yarn global add\
     browserify\
     budo\
     hjson\
     pm2\
     rollup\
     @mapbox/mapbox-gl-style-spec\
+    @mapbox/mapbox-gl-native\
     @pushcorn/hocon-parser&&\
   git clone https://github.com/ibesora/vt-optimizer&&\
   cd vt-optimizer; npm install; cd ..
