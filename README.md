@@ -3,7 +3,7 @@ A developer friendly UNVT Dockerfile based on Ubuntu
 
 # use
 ```zsh
-docker rum -ti --rm -v /your/work/directory:/root/work unvt/nanban
+docker rum -ti --rm -v $(pwd):/root/work unvt/nanban
 ```
 
 # build
