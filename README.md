@@ -15,5 +15,5 @@ rake build
 This is a developer friendly build. If you need anything to be added, please make a pull request for that. 
 
 # about the name
-the name `nanban` is from Tamil language which means friend.
+The name `nanban` is from Tamil language. It means friend.
 
