@@ -1,5 +1,5 @@
 # nanban
-A developer friendly UNVT Dockerfile based on Ubuntu
+A developer friendly UNVT Dockerfile based on Ubuntu/Intel
 
 # use
 ```zsh

@@ -34,7 +34,7 @@ RUN apt-get update&&\
     osmium-tool\
     pkg-config\
     ruby\
-    sqlite\
+    sqlite3\
     tmux\
     vim\
     yarn\
@@ -57,5 +57,10 @@ RUN apt-get update&&\
   git clone https://github.com/ibesora/vt-optimizer&&\
   cd vt-optimizer&&\
     yarn install&&\
-  cd ..
+  cd ..&&\
+#  git clone https://github.com/mapbox/vtshaver&&\
+#  cd vtshaver&&\
+#    npm install&&\
+#  cd ..&&\
+  gem install mdless hocon
 
