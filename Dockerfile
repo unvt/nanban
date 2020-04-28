@@ -1,5 +1,6 @@
 FROM ubuntu:latest
 WORKDIR /root
+ENV DEBIAN_FRONTEND=noninteractive
 
 RUN apt-get update&&\
   apt-get -y upgrade&&\
