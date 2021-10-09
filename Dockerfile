@@ -63,5 +63,11 @@ RUN apt-get update&&\
 #  cd vtshaver&&\
 #    npm install&&\
 #  cd ..&&\
+  git clone https://github.com/geolonia/charites&&\
+  cd charites&&\
+    npm install &&\
+    npm run build &&\
+    npm install -g . &&\
+  cd ..&&\
   gem install mdless hocon
 
