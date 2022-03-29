@@ -57,7 +57,7 @@ RUN apt-get update&&\
     @pushcorn/hocon-parser&&\
   git clone https://github.com/ibesora/vt-optimizer&&\
   cd vt-optimizer&&\
-    yarn install&&\
+#    yarn install&&\
   cd ..&&\
 #  git clone https://github.com/mapbox/vtshaver&&\
 #  cd vtshaver&&\
