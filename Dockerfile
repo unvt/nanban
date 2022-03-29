@@ -64,5 +64,7 @@ RUN apt-get update&&\
 #    npm install&&\
 #  cd ..&&\
   npm install -g @unvt/charites&&\
+  npm install -g @unvt/kata&&\
+  npm install -g @unvt/itoma&&\
   gem install mdless hocon
 
