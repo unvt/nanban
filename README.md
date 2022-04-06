@@ -5,6 +5,10 @@ A developer friendly UNVT Dockerfile based on Ubuntu/Intel
 ```zsh
 docker run -ti --rm -v $(pwd):/root/work unvt/nanban
 ```
+
+vp-optimizer is not available in the recent upgrade.
+Please use unvt/docker:12 to use vp-optimizer with the nodejs 12 environment. (nodejs 12's end of life is April 2022.)
+
 use unvt/nanban:16 for nodejs 16
 
 # build
