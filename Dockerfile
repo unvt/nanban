@@ -41,7 +41,7 @@ RUN apt-get update&&\
     yarn\
     zip\
     zlib1g-dev&&\ 
-  git clone https://github.com/mapbox/tippecanoe&&\
+  git clone https://github.com/felt/tippecanoe&&\
   cd tippecanoe&&\
     make -j3 LDFLAGS="-latomic"&&\
     make install&&\
